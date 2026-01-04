@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintZone Sport - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1>SprintZone Sport</h1>
+        <p>Destinasi Utama Anda untuk Sepatu Premium</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Order Form</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <section class="hero">
+            <h2>Welcome to SprintZone Sport</h2>
+            <p>Temukan tren terbaru dalam alas kaki atletik dan kasual. Dari sepatu lari hingga sepatu kets bergaya, kami memiliki semua yang Anda butuhkan untuk meningkatkan penampilan Anda.</p>
+            <img src="logo.jpg.png" alt="SprintZone Sport Banner" class="hero-image" width="200" height="200"> 
+        </section>
+
+        <section class="features">
+            <h3>Mengapa Memilih Kami?</h3>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h4>Sepatu Berkualitas</h4>
+                    <p>Material premium dan pengerjaan yang teliti untuk kenyamanan sepanjang hari.</p>
+                </div>
+                <div class="feature">
+                    <h4>Pilihan Luas</h4>
+                    <p>Dari olahraga hingga kasual, temukan pasangan yang sempurna untuk Anda.</p>
+                </div>
+                <div class="feature">
+                    <h4>Saran Ahli</h4>
+                    <p>Tim kami membantu Anda memilih sepatu yang tepat sesuai kebutuhan Anda.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 SprintZone Sport. All rights reserved.</p>
+        <p>Designed by Gibran Luthfi Fadilah, NIM: 251011701238, Class: 01SIFP003</p>
+
+        <!-- TIME -->
+        <div id="current-time"></div>
+    </footer>
+
+    <!-- JavaScript TIME (DITAMBAHKAN) -->
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById("current-time");
+            const now = new Date();
+
+            const tanggal = now.toLocaleDateString("id-ID", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
+
+            const jam = now.toLocaleTimeString("id-ID");
+
+            timeElement.innerHTML = tanggal + " | " + jam;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+
+</body>
+</html>

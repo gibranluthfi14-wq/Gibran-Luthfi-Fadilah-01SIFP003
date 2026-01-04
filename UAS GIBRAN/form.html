@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintZone Sport - Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1>SprintZone Sport</h1>
+        <p>Destinasi Utama Anda untuk Sepatu Premium</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Order Form</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <section class="form-section">
+            <h2>Pesan Sepatu Anda</h2>
+            <p>Isi formulir di bawah ini untuk melakukan pemesanan. Kami akan segera menghubungi Anda!</p>
+            <form id="order-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">No HP:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="shoe-type">Tipe Sepatu:</label>
+                    <select id="shoe-type" name="shoe-type" required>
+                        <option value="">Pilih jenis sepatu</option>
+                        <option value="running">Sepatu Lari</option>
+                        <option value="casual">Sepatu Lari</option>
+                        <option value="basketball">Sepatu Basket</option>
+                        <option value="hiking">Sepatu Hiking</option>
+                        <option value="formal">Sepatu Formal </option>
+                        <option value="training">Sepatu Training </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="">Pilih size</option>
+                        <option value="6">37</option>
+                        <option value="7">38</option>
+                        <option value="8">39</option>
+                        <option value="9">40</option>
+                        <option value="10">41</option>
+                        <option value="11">42</option>
+                        <option value="12">43</option>
+                        <option value="13">44</option>
+                        <option value="14">45</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Alamat:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 SprintZone Sport. All rights reserved.</p>
+        <p>Designed by Gibran Luthfi Fadilah, NIM: 251011701238, Class: 01SIFP003</p>
+        <div id="current-time"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
